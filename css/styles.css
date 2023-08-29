@@ -1,53 +1,62 @@
+:root {
+    --iris: #4d5ae5;
+    --navyblue: #2e2f42;
+    --ocean: #404bbf;
+    --white: #fff;
+    --slate: #434455;
+    --cornflower: #e7e9fc;
+    --cloud: #f4f4fd;
+}
+
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
 }
 
 .logo {
     text-decoration: none;
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 800;
     line-height: 21px;
-    letter-spacing: 0.54px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .weblogo {
-    color: #4d5ae5;
+    color: var(--iris, #4d5ae5);
 }
 
 .studiologo {
-    color: #2e2f42;
+    color: var(--navyblue, #2e2f42);
 }
 
-.linkpage {
+.link-page {
     text-decoration: none;
-    color: #2e2f42;
+    color: var(--navyblue, #2e2f42);
     font-weight: 500;
 }
 
 .link-page:hover, 
 .link-page:focus {
-    color: #404bbf;
+    color: var(--ocean, #404bbf);
 }
 
 .link-active {
-    color: #404bbf;
+    color: var(--ocean, #404bbf);
 }
 
 .contacts {
-    color: #434455;
+    color: var(--slate, #434455);
     text-decoration: none;
 }
 
 .contacts:hover,
 .contacts:active {
-    color: #404bbf;
+    color: var(--ocean, #404bbf);
  }
 
  .list { 
@@ -57,29 +66,29 @@ body {
  }
 
  .background {
-    background-color: #2e2f42;
+    background-color: var(--navyblue, #2e2f42);
     margin: 0%;
     padding: 0%;
  }
 
  .title {
-    color: white;
+    color: var(--white, #fff);
     text-align: center;
     font-size: 56px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 60px;
-    letter-spacing: 1.12px;
+    letter-spacing: 0.02em;
  }
 
  .order-button {
     cursor: pointer;
-    color: white;
-    background: #4d5ae5;
+    color: var(--white, #fff);
+    background: var(--iris, #4d5ae5);
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: 0.64px;
+    letter-spacing: 0.04em;
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0,0,15);
@@ -87,87 +96,94 @@ body {
 
  .order-button:hover,
  .order-button:active {
-    color: white;
-    background-color: #05092f;
+    color: var(--white, #fff);
+    background-color: var(--ocean, #05092f);
  }
 
  .title.about {
-    color: #2e2f42;
+    color: var(--navyblue, #2e2f42);
     font-size: 20px;
     font-weight: 500;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.02em;
  }
 
- p {
-    color: #434455;
+ .section-members {
+    background: var(--cloud, #F4F4FD);
  }
 
  .section-title {
-    color: #2e2f42;
+    color: var(--navyblue, #2e2f42);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 40px;
-    letter-spacing: 0.72px;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
  }
 
  .team-members {
-    color: #2e2f42;
+    color: var(--navyblue, #2e2f42);
     font-size: 20px;
     font-weight: 500;
-    letter-spacing: 0.4px;
+    text-align: center;
+    letter-spacing: 0.02em;
+ }
+
+.job-role {
+    color: var(--slate, #434455);
+    text-align: center;
  }
 
 .portfolio-page {
-    background-color: white;
+    background-color: var(--white, #fff);
 }
 
 .filter-button {
     cursor: pointer;
-    color: #4d5ae5;
-    background-color: #f4f4fd;
-    text-align: left;
+    color: var(--iris, #4d5ae5);
+    background-color: var(--cloud, #f4f4fd);
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: 0.64px;
+    letter-spacing: 0.04em;
     border-radius: 4px;
-    border: 1px solid #e7e9fc;
+    border: 1px solid var(--cornflower, #e7e9fc);
 }
 
 .filter-button:hover,
 .filter-button:focus {
-    color: #f4f4fd;
-    background-color: #05092f;
-    border-color: #05092f;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0,0,12),
-    0px 2px 1px 0px rgba(0, 0,0,.08), 0px 3px 1px 0px rgba(0, 0,0,.01);
-}
-
-.active-filter {
-    color: white;
-    background-color: #05092f;
-    border-color: #05092f;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 12),
-            0px 2px 1px 0px rgba(0, 0, 0, .08), 0px 3px 1px 0px rgba(0, 0, 0, .01);
-}
+    color: var(--cloud, #f4f4fd);
+    background-color: var(--ocean, #05092f);
+    border-color: var(--ocean, #05092f);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 2px 1px 0px rgba(0, 0, 0, 0.08),
+        0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    }
+/**
+.active-button {
+    color: var(--white, #fff);
+    background-color: var(--ocean, #05092f);
+    border-color: var(--ocean, #05092f);
+    box-shadow: px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 2px 1px 0px rgba(0, 0, 0, 0.08),
+        0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    } **/
 
 .portfolio-services {
-    color: #2e2f42;
+    color: var(--navyblue, #2e2f42);
     font-size: 20px;
     font-weight: 500;
-    letter-spacing: 0.04;
+    letter-spacing: 0.02em;
 }
 
 .footer {
-    background-color: #2e2f42;
+    background-color: var(--navyblue, #2e2f42);
 }
 
 .footer-logo {
-    color: #f4f4fd;
+    color: var(--cloud, #f4f4fd);
 }
 
 .footer-text {
-    color: #f4f4fd
+    color: var(--cloud, #f4f4fd);
 }
